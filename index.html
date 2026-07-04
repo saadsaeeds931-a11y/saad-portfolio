@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saad — WordPress Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- global glow -->
+<div class="hero-blob1" aria-hidden="true"></div>
+<div class="hero-blob2" aria-hidden="true"></div>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mob" id="mob">
+  <button class="mbc" id="mbc">✕</button>
+  <a href="#hero"         onclick="sTo(event,'hero');closeMob()">Home</a>
+  <a href="#about"        onclick="sTo(event,'about');closeMob()">About</a>
+  <a href="#services"     onclick="sTo(event,'services');closeMob()">Services</a>
+  <a href="#projects"     onclick="sTo(event,'projects');closeMob()">Projects</a>
+  <a href="#skills"       onclick="sTo(event,'skills');closeMob()">Skills</a>
+  <a href="#process"      onclick="sTo(event,'process');closeMob()">Process</a>
+  <a href="#testimonials" onclick="sTo(event,'testimonials');closeMob()">Testimonials</a>
+  <a href="#contact"      onclick="sTo(event,'contact');closeMob()">Contact</a>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <a href="#hero" onclick="sTo(event,'hero')" class="nl">
+    <span class="nl-name">Saad</span>
+    <span class="nl-sub">WordPress Developer</span>
+  </a>
+  <ul class="nm">
+    <li><a href="#hero"         onclick="sTo(event,'hero')">Home</a></li>
+    <li><a href="#about"        onclick="sTo(event,'about')">About</a></li>
+    <li><a href="#services"     onclick="sTo(event,'services')">Services</a></li>
+    <li><a href="#projects"     onclick="sTo(event,'projects')">Projects</a></li>
+    <li><a href="#skills"       onclick="sTo(event,'skills')">Skills</a></li>
+    <li><a href="#process"      onclick="sTo(event,'process')">Process</a></li>
+    <li><a href="#testimonials" onclick="sTo(event,'testimonials')">Testimonials</a></li>
+    <li><a href="#faq"          onclick="sTo(event,'faq')">FAQ</a></li>
+    <li><a href="#contact"      onclick="sTo(event,'contact')">Contact</a></li>
+  </ul>
+  <a href="#contact" onclick="sTo(event,'contact')" class="ncta">Let's Work Together →</a>
+  <div class="hbg" id="hbg" onclick="openMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section id="hero">
+  <!-- LEFT -->
+  <div class="h-left">
+    <!-- available badge -->
+    <div class="rv" style="margin-bottom:1.2rem">
+      <span style="display:inline-flex;align-items:center;gap:.5rem;padding:.38rem 1rem;border-radius:100px;border:1px solid rgba(124,58,237,.4);background:rgba(124,58,237,.1);font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--ac2);text-transform:uppercase">
+        <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:pulse 2s infinite"></span>
+        Available for New Projects
+      </span>
+    </div>
+    <h1 class="rv d1" style="font-family:'Space Grotesk',sans-serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:800;line-height:1.05;margin-bottom:.5rem;letter-spacing:-.02em">
+      Hi, I'm <span style="background:linear-gradient(135deg,#fff 40%,var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Saad</span>
+    </h1>
+    <div class="rv d2" style="font-family:'Space Grotesk',sans-serif;font-size:clamp(1.15rem,2.2vw,1.55rem);font-weight:700;color:var(--ac2);margin-bottom:1.1rem;min-height:2rem" id="typed"></div>
+    <p class="h-desc rv d3">I build high-performance, SEO-friendly, responsive WordPress websites that help businesses establish a strong online presence and generate more leads. From business websites and eCommerce stores to blogs and portfolios, I create websites tailored to each client's goals.</p>
+    <div class="h-btns rv d3">
+      <a href="#contact" onclick="sTo(event,'contact')" class="btn-p">Contact Me →</a>
+      <a href="#contact" onclick="sTo(event,'contact')" class="btn-s" style="border:1.5px solid rgba(255,255,255,0.25);color:#fff">Let's Work Together →</a>
+    </div>
+    <!-- stats -->
+    <div class="h-stats rv d4">
+      <div class="hst"><span class="hst-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span><div><div class="hst-num"><span class="cnt" data-t="50">0</span>+</div><div class="hst-lbl">Successful Projects</div></div></div>
+      <div class="hst"><span class="hst-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg></span><div><div class="hst-num"><span class="cnt" data-t="100">0</span>%</div><div class="hst-lbl">Responsive</div></div></div>
+      <div class="hst"><span class="hst-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><div><div class="hst-num">Fast</div><div class="hst-lbl">Delivery</div></div></div>
+      <div class="hst"><span class="hst-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><div><div class="hst-num"><span class="cnt" data-t="100">0</span>%</div><div class="hst-lbl">Satisfaction</div></div></div>
+    </div>
+  </div>
+
+  <!-- RIGHT — photo -->
+  <div class="h-right rr d1">
+    <div class="h-photo-wrap">
+      <!-- orbit rings -->
+      <div class="orb" aria-hidden="true">
+        <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="300" cy="300" r="240" stroke="rgba(124,58,237,0.12)" stroke-width="1" stroke-dasharray="6 14"/>
+          <circle cx="300" cy="300" r="285" stroke="rgba(124,58,237,0.07)" stroke-width="1" stroke-dasharray="4 18"/>
+          <circle cx="300" cy="300" r="185" stroke="rgba(124,58,237,0.09)" stroke-width="1"/>
+          <circle cx="300" cy="60"  r="5" fill="rgba(124,58,237,0.8)"/>
+          <circle cx="525" cy="240" r="4" fill="rgba(159,103,255,0.6)"/>
+          <circle cx="450" cy="520" r="3.5" fill="rgba(124,58,237,0.5)"/>
+          <circle cx="120" cy="410" r="3" fill="rgba(159,103,255,0.4)"/>
+        </svg>
+      </div>
+      <div class="h-photo-glow"></div>
+      <div class="h-photo-glow2"></div>
+      <div class="h-photo-box">
+        <div class="side-fade-l"></div>
+        <div class="side-fade-r"></div>
+        <img id="heroImg" src="https://i.ibb.co/bRX8nvBp/image.jpg" alt="Saad — WordPress Developer" style="display:block" onerror="this.style.display='none';document.getElementById('hFb').style.display='flex'">
+        <div id="hFb" class="photo-fb">
+          <div class="av">S</div>
+          <div class="av-name">Saad</div>
+          <div class="av-role">WordPress Developer</div>
+        </div>
+      </div>
+      <!-- badges -->
+      <div class="avail-badge">
+        <div class="avail-dot"></div>
+        <div class="avail-txt">
+          <span>Open to</span>
+          <span>New Projects</span>
+        </div>
+      </div>
+      <div class="exp-badge">
+        <div class="exp-num">3+</div>
+        <div class="exp-lbl">Yrs Exp.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<section id="about" class="sec">
+  <div class="sec-inner">
+    <div class="ab-grid">
+      <!-- left — info panel -->
+      <div class="ab-info-panel rl">
+
+        <!-- who i am -->
+        <div class="ab-info-card">
+          <div class="ab-ic-row"><div class="ab-ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ac2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="ab-ic-label">Who I Am</div></div>
+          <div class="ab-ic-val">A passionate WordPress Developer from Faisalabad, Pakistan, building fast, modern, and SEO-optimized websites for businesses worldwide.</div>
+        </div>
+
+        <div class="ab-info-card">
+          <div class="ab-ic-row"><div class="ab-ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ac2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><div class="ab-ic-label">Experience</div></div>
+          <div class="ab-ic-val">3+ years delivering 50+ successful WordPress projects — from business sites to full WooCommerce stores — with 100% client satisfaction.</div>
+        </div>
+
+        <div class="ab-info-card">
+          <div class="ab-ic-row"><div class="ab-ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ac2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="ab-ic-label">Location &amp; Availability</div></div>
+          <div class="ab-ic-val">Based in Faisalabad, Pakistan · Working with clients globally · Open to new projects</div>
+        </div>
+
+        <!-- skill bars -->
+        <div class="ab-skills-card">
+          <div class="ab-sk-title">Core Skills</div>
+          <div class="sk-bar-row"><div class="sk-bar-top"><span class="sk-bar-name">WordPress Development</span><span class="sk-bar-pct">95%</span></div><div class="sk-bar-track"><div class="sk-bar-fill" data-w="95"></div></div></div>
+          <div class="sk-bar-row"><div class="sk-bar-top"><span class="sk-bar-name">Elementor Pro</span><span class="sk-bar-pct">92%</span></div><div class="sk-bar-track"><div class="sk-bar-fill" data-w="92"></div></div></div>
+          <div class="sk-bar-row"><div class="sk-bar-top"><span class="sk-bar-name">WooCommerce</span><span class="sk-bar-pct">88%</span></div><div class="sk-bar-track"><div class="sk-bar-fill" data-w="88"></div></div></div>
+          <div class="sk-bar-row"><div class="sk-bar-top"><span class="sk-bar-name">SEO & Speed Optimization</span><span class="sk-bar-pct">85%</span></div><div class="sk-bar-track"><div class="sk-bar-fill" data-w="85"></div></div></div>
+        </div>
+
+        <!-- tools -->
+        <div class="ab-tools-card">
+          <div class="ab-sk-title">Tools I Use</div>
+          <div class="ab-tools-grid">
+            <div class="ab-tool"><span>🔷</span>WordPress</div>
+            <div class="ab-tool"><span>⚙️</span>Elementor</div>
+            <div class="ab-tool"><span>🛒</span>WooCommerce</div>
+            <div class="ab-tool"><span>🔍</span>Yoast SEO</div>
+            <div class="ab-tool"><span>⚡</span>WP Rocket</div>
+            <div class="ab-tool"><span>🎨</span>Figma</div>
+          </div>
+        </div>
+
+      </div>
+      <!-- text -->
+      <div class="rr" style="text-align:center">
+        <div class="eyebrow" style="justify-content:center">About Me</div>
+        <h2 class="sec-title">I Create Modern WordPress<br>Websites That <span>Drive Results</span></h2>
+        <p style="color:var(--txt2);font-size:.9rem;line-height:1.82">I am a passionate WordPress Developer with extensive experience in creating custom websites using WordPress, Elementor, and WooCommerce. I focus on delivering fast, secure, and SEO-friendly websites that not only look amazing but also help businesses grow.</p>
+        <div class="ab-checks" style="text-align:left;justify-items:start">
+          <div class="chk">Custom WordPress Development</div>
+          <div class="chk">Website Maintenance &amp; Support</div>
+          <div class="chk">Elementor Website Design</div>
+          <div class="chk">Bug Fixing &amp; Issue Resolution</div>
+          <div class="chk">WooCommerce Store Development</div>
+          <div class="chk">Landing Page Design</div>
+          <div class="chk">Website Speed Optimization</div>
+          <div class="chk">Redesign &amp; Revamp Websites</div>
+          <div class="chk">SEO Friendly &amp; Mobile Responsive</div>
+          <div class="chk">Clean, Scalable &amp; Modern Code</div>
+        </div>
+        <div class="ab-stats" style="text-align:center">
+          <div class="ab-stat"><div class="sn"><span class="cnt" data-t="50">0</span>+</div><div class="sl2">Projects Completed</div></div>
+          <div class="ab-stat"><div class="sn"><span class="cnt" data-t="100">0</span>+</div><div class="sl2">Happy Clients</div></div>
+          <div class="ab-stat"><div class="sn">3+</div><div class="sl2">Years Experience</div></div>
+          <div class="ab-stat"><div class="sn"><span class="cnt" data-t="100">0</span>%</div><div class="sl2">Satisfaction</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SERVICES ══════════════════════ -->
+<section id="services" class="sec">
+  <div class="sec-inner">
+    <div class="rv">
+      <div class="eyebrow">What I Do</div>
+      <h2 class="sec-title">Services I <span>Provide</span></h2>
+      <p class="sec-sub">End-to-end WordPress solutions tailored to your business goals.</p>
+    </div>
+    <div class="sv-grid">
+      <div class="sv rv d1"><div class="sv-ic">🌐</div><h3>WordPress Development</h3><p>Custom WordPress websites built from scratch with clean code, optimal performance, and full mobile responsiveness.</p></div>
+      <div class="sv rv d2"><div class="sv-ic">✨</div><h3>Elementor Website Design</h3><p>Stunning websites designed with Elementor Pro — pixel-perfect layouts that convert visitors into clients.</p></div>
+      <div class="sv rv d3"><div class="sv-ic">🛒</div><h3>WooCommerce Store</h3><p>Full-featured online stores with product management, payment gateways, and seamless checkout experiences.</p></div>
+      <div class="sv rv d1"><div class="sv-ic">🏢</div><h3>Business Websites</h3><p>Professional business websites that establish credibility and generate leads for HVAC, plumbing, electrical, and more.</p></div>
+      <div class="sv rv d2"><div class="sv-ic">📄</div><h3>Landing Pages</h3><p>High-converting landing pages optimized for lead generation, product launches, and marketing campaigns.</p></div>
+      <div class="sv rv d3"><div class="sv-ic">🔄</div><h3>Website Redesign</h3><p>Transform your outdated website into a modern, conversion-focused platform with fresh design and improved UX.</p></div>
+      <div class="sv rv d1"><div class="sv-ic">⚡</div><h3>Speed Optimization</h3><p>Dramatically improve your website's loading speed with caching, image optimization, and Core Web Vitals fixes.</p></div>
+      <div class="sv rv d2"><div class="sv-ic">🔍</div><h3>Technical SEO</h3><p>Improve rankings with technical SEO audits, schema markup, sitemaps, and on-page optimization.</p></div>
+      <div class="sv rv d3"><div class="sv-ic">🛠</div><h3>Bug Fixes &amp; Maintenance</h3><p>Reliable ongoing maintenance, security updates, plugin management, and bug fixes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PROJECTS ══════════════════════ -->
+<section id="projects" class="sec">
+  <div class="sec-inner">
+    <div class="rv">
+      <div class="eyebrow">Portfolio</div>
+      <h2 class="sec-title">Recent <span>Projects</span></h2>
+      <p class="sec-sub">A selection of WordPress websites I've designed, built, and optimized for clients.</p>
+    </div>
+    <div class="pr-filter">
+      <button class="fbtn active" onclick="fPr('all',this)">All</button>
+      <button class="fbtn" onclick="fPr('business',this)">Business</button>
+      <button class="fbtn" onclick="fPr('ecommerce',this)">WooCommerce</button>
+      <button class="fbtn" onclick="fPr('landing',this)">Landing Pages</button>
+      <button class="fbtn" onclick="fPr('redesign',this)">Redesigns</button>
+    </div>
+    <div class="pr-grid">
+      <div class="pc rv d1" data-cat="business"><div class="pc-img">🏠</div><div class="pc-info"><div class="pc-cat">Business Website</div><div class="pc-title">CoolBreeze HVAC</div><div class="pc-desc">A fast, lead-focused site for a Texas HVAC company built with Elementor and local SEO in mind.</div><div class="pc-pills"><span class="pill">WordPress</span><span class="pill">Elementor</span><span class="pill">SEO</span></div></div></div>
+      <div class="pc rv d2" data-cat="ecommerce"><div class="pc-img">🛍️</div><div class="pc-info"><div class="pc-cat">WooCommerce</div><div class="pc-title">ShopNova Store</div><div class="pc-desc">A complete online store with product catalog, Stripe checkout, and shipping configuration.</div><div class="pc-pills"><span class="pill">WooCommerce</span><span class="pill">Stripe</span></div></div></div>
+      <div class="pc rv d3" data-cat="business"><div class="pc-img">🏢</div><div class="pc-info"><div class="pc-cat">Business Website</div><div class="pc-title">Nexus Consulting</div><div class="pc-desc">A polished corporate website that helped the client rank on the first page of Google.</div><div class="pc-pills"><span class="pill">WordPress</span><span class="pill">SEO</span></div></div></div>
+      <div class="pc rv d1" data-cat="redesign"><div class="pc-img">🔧</div><div class="pc-info"><div class="pc-cat">Redesign</div><div class="pc-title">Parker Plumbing</div><div class="pc-desc">A full redesign that improved load speed and mobile experience, driving more phone calls.</div><div class="pc-pills"><span class="pill">Redesign</span><span class="pill">Speed</span></div></div></div>
+      <div class="pc rv d2" data-cat="landing"><div class="pc-img">📄</div><div class="pc-info"><div class="pc-cat">Landing Page</div><div class="pc-title">Digital Agency Launch</div><div class="pc-desc">A high-converting landing page built for a marketing campaign with a 94 PageSpeed score.</div><div class="pc-pills"><span class="pill">Landing Page</span><span class="pill">Performance</span></div></div></div>
+      <div class="pc rv d3" data-cat="ecommerce"><div class="pc-img">🛒</div><div class="pc-info"><div class="pc-cat">WooCommerce</div><div class="pc-title">Boutique eCommerce</div><div class="pc-desc">A visually rich online boutique with custom product filtering and a streamlined checkout flow.</div><div class="pc-pills"><span class="pill">WooCommerce</span><span class="pill">UX</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SKILLS ══════════════════════ -->
+<section id="skills" class="sec">
+  <div class="sec-inner">
+    <div class="rv" style="text-align:center">
+      <div class="eyebrow" style="justify-content:center">Tech Stack</div>
+      <h2 class="sec-title" style="margin:0 auto .75rem">Technical <span>Skills</span></h2>
+      <p class="sec-sub" style="margin:0 auto">The tools and technologies I use to build outstanding websites.</p>
+    </div>
+    <div class="sk-grid">
+      <div class="skc rv d1"><div class="sk-ic">🔷</div><div class="sk-name">WordPress</div></div>
+      <div class="skc rv d2"><div class="sk-ic">⚙️</div><div class="sk-name">Elementor</div></div>
+      <div class="skc rv d3"><div class="sk-ic">🛒</div><div class="sk-name">WooCommerce</div></div>
+      <div class="skc rv d4"><div class="sk-ic">🔍</div><div class="sk-name">Technical SEO</div></div>
+      <div class="skc rv d5"><div class="sk-ic">⚡</div><div class="sk-name">Speed Optimization</div></div>
+      <div class="skc rv d1"><div class="sk-ic">📱</div><div class="sk-name">Responsive Design</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PROCESS ══════════════════════ -->
+<section id="process" class="sec">
+  <div class="sec-inner">
+    <div class="rv" style="text-align:center">
+      <div class="eyebrow" style="justify-content:center">How I Work</div>
+      <h2 class="sec-title" style="margin:0 auto .75rem">My Development <span>Process</span></h2>
+      <p class="sec-sub" style="margin:0 auto">A structured, transparent approach that keeps you informed and your project on track.</p>
+    </div>
+    <div class="proc-wrap">
+      <div class="pi"><div class="pi-l"><div class="pi-card rl"><div class="pi-num">01</div><div class="pi-step">Discovery</div><div class="pi-desc">Detailed consultation to understand your business, goals, target audience, and competitors.</div></div></div><div class="pi-c"><div class="pi-dot">1</div></div><div class="pi-r"></div></div>
+      <div class="pi"><div class="pi-l"></div><div class="pi-c"><div class="pi-dot">2</div></div><div class="pi-r"><div class="pi-card rr"><div class="pi-num">02</div><div class="pi-step">Planning</div><div class="pi-desc">Detailed project plan including sitemap, feature list, timeline, and content strategy.</div></div></div></div>
+      <div class="pi"><div class="pi-l"><div class="pi-card rl"><div class="pi-num">03</div><div class="pi-step">UI Design</div><div class="pi-desc">Design mockups and wireframes refined until you love every detail of the visual direction.</div></div></div><div class="pi-c"><div class="pi-dot">3</div></div><div class="pi-r"></div></div>
+      <div class="pi"><div class="pi-l"></div><div class="pi-c"><div class="pi-dot">4</div></div><div class="pi-r"><div class="pi-card rr"><div class="pi-num">04</div><div class="pi-step">Development</div><div class="pi-desc">The website is built with clean code, optimized performance, and all agreed-upon features.</div></div></div></div>
+      <div class="pi"><div class="pi-l"><div class="pi-card rl"><div class="pi-num">05</div><div class="pi-step">Testing</div><div class="pi-desc">Thorough cross-browser, cross-device testing ensures your site works flawlessly everywhere.</div></div></div><div class="pi-c"><div class="pi-dot">5</div></div><div class="pi-r"></div></div>
+      <div class="pi"><div class="pi-l"></div><div class="pi-c"><div class="pi-dot">6</div></div><div class="pi-r"><div class="pi-card rr"><div class="pi-num">06</div><div class="pi-step">Launch</div><div class="pi-desc">We deploy your website live with SSL, speed optimization, and all technical checks completed.</div></div></div></div>
+      <div class="pi"><div class="pi-l"><div class="pi-card rl"><div class="pi-num">07</div><div class="pi-step">Support</div><div class="pi-desc">Post-launch maintenance, updates, and performance monitoring to keep your site at its best.</div></div></div><div class="pi-c"><div class="pi-dot">7</div></div><div class="pi-r"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WHY ME ══════════════════════ -->
+<section id="why" class="sec">
+  <div class="sec-inner">
+    <div class="rv" style="text-align:center">
+      <div class="eyebrow" style="justify-content:center">Why Me</div>
+      <h2 class="sec-title" style="margin:0 auto .75rem">Why Choose <span>Saad</span></h2>
+      <p class="sec-sub" style="margin:0 auto">I don't just build websites — I build digital assets that grow your business.</p>
+    </div>
+    <div class="why-grid">
+      <div class="wc rv d1"><div class="wc-ic">🎯</div><h3>Pixel Perfect</h3><p>Every element and spacing is carefully crafted for visual excellence.</p></div>
+      <div class="wc rv d2"><div class="wc-ic">🔍</div><h3>SEO Friendly</h3><p>Built with technical SEO best practices so your site ranks on Google.</p></div>
+      <div class="wc rv d3"><div class="wc-ic">⚡</div><h3>Lightning Fast</h3><p>Optimized for speed with 90+ Google PageSpeed scores on every project.</p></div>
+      <div class="wc rv d4"><div class="wc-ic">📱</div><h3>Responsive</h3><p>Your website looks perfect on every screen size and device.</p></div>
+      <div class="wc rv d1"><div class="wc-ic">✨</div><h3>Clean Code</h3><p>Well-structured, maintainable code that makes future updates easy.</p></div>
+      <div class="wc rv d2"><div class="wc-ic">💬</div><h3>Easy Communication</h3><p>Regular updates and clear communication throughout the entire project.</p></div>
+      <div class="wc rv d3"><div class="wc-ic">🎨</div><h3>Modern UI</h3><p>Contemporary designs that make your brand stand out from competitors.</p></div>
+      <div class="wc rv d4"><div class="wc-ic">🤝</div><h3>Ongoing Support</h3><p>I'm here after launch for maintenance, updates, and any questions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
+<section id="testimonials" class="sec">
+  <div class="sec-inner">
+    <div class="rv">
+      <div class="eyebrow">Client Reviews</div>
+      <h2 class="sec-title">What Clients <span>Say</span></h2>
+      <p class="sec-sub">Real feedback from real clients I've had the privilege of working with.</p>
+    </div>
+    <div class="t-slider">
+      <div class="t-track" id="tTrk">
+        <div class="tc"><div class="t-stars">★★★★★</div><p class="t-text">"Saad built our HVAC company website from scratch and it exceeded all expectations. Fast turnaround, professional design, and our leads increased by 40% within the first month. Highly recommend!"</p><div class="t-cl"><div class="t-av">MJ</div><div><div class="t-name">Michael Johnson</div><div class="t-co">CoolBreeze HVAC, Texas</div></div></div></div>
+        <div class="tc"><div class="t-stars">★★★★★</div><p class="t-text">"Our WooCommerce store is now generating consistent sales. Saad handled everything from design to deployment, including payment gateway setup. The site is fast, beautiful, and easy to manage."</p><div class="t-cl"><div class="t-av">SR</div><div><div class="t-name">Sarah Rahman</div><div class="t-co">ShopNova, UK</div></div></div></div>
+        <div class="tc"><div class="t-stars">★★★★★</div><p class="t-text">"Professional, communicative, and delivered exactly what he promised on time. Our business website now ranks on the first page of Google for local searches. Money well spent!"</p><div class="t-cl"><div class="t-av">DC</div><div><div class="t-name">David Chen</div><div class="t-co">Nexus Consulting, Canada</div></div></div></div>
+        <div class="tc"><div class="t-stars">★★★★★</div><p class="t-text">"Saad redesigned our plumbing company website and the results were immediate. The site loads in under 2 seconds, looks amazing on mobile, and our phone has not stopped ringing since launch."</p><div class="t-cl"><div class="t-av">RP</div><div><div class="t-name">Robert Parker</div><div class="t-co">Parker Plumbing, Australia</div></div></div></div>
+        <div class="tc"><div class="t-stars">★★★★★</div><p class="t-text">"The speed optimization Saad did on our website was incredible. Our PageSpeed score went from 38 to 94. The website now loads instantly and we've seen a huge drop in bounce rate."</p><div class="t-cl"><div class="t-av">AM</div><div><div class="t-name">Aisha Malik</div><div class="t-co">Digital Agency, UAE</div></div></div></div>
+      </div>
+    </div>
+    <div class="sl-ctrl"><button class="sl-btn" onclick="slT(-1)">←</button><button class="sl-btn" onclick="slT(1)">→</button></div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FAQ ══════════════════════ -->
+<section id="faq" class="sec">
+  <div class="sec-inner">
+    <div class="rv">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="sec-title">Frequently Asked <span>Questions</span></h2>
+      <p class="sec-sub">Everything you need to know before we start working together.</p>
+    </div>
+    <div class="faq-wrap">
+      <div class="fi rv"><div class="fq" onclick="tFaq(this)">How long does a website take to complete?<span class="fqi">+</span></div><div class="fa">A standard business website typically takes 7–14 days. eCommerce stores and larger projects may take 3–4 weeks. I'll give you a clear timeline estimate before we start.</div></div>
+      <div class="fi rv d1"><div class="fq" onclick="tFaq(this)">Do you redesign existing WordPress websites?<span class="fqi">+</span></div><div class="fa">Absolutely. I specialize in WordPress redesigns — modernizing outdated sites while preserving your existing SEO authority and content.</div></div>
+      <div class="fi rv d2"><div class="fq" onclick="tFaq(this)">Can you build a WooCommerce online store?<span class="fqi">+</span></div><div class="fa">Yes! WooCommerce development is one of my core specialties. I set up product listings, payment gateways (Stripe, PayPal), shipping configurations, and custom checkout flows.</div></div>
+      <div class="fi rv d3"><div class="fq" onclick="tFaq(this)">Do you provide website maintenance after launch?<span class="fqi">+</span></div><div class="fa">Yes. I offer ongoing maintenance packages that include plugin/theme updates, security monitoring, backups, and content updates so your site stays secure and up-to-date.</div></div>
+      <div class="fi rv d4"><div class="fq" onclick="tFaq(this)">Can you improve my existing website's speed?<span class="fqi">+</span></div><div class="fa">Definitely. I offer standalone speed optimization services including image compression, caching setup, database optimization, CDN integration, and Core Web Vitals improvements.</div></div>
+      <div class="fi rv"><div class="fq" onclick="tFaq(this)">Do you build websites for home service companies?<span class="fqi">+</span></div><div class="fa">Yes — this is my sweet spot! I've built websites for HVAC, plumbing, electrical, roofing, and other home service businesses. These sites are optimized for local SEO and phone call conversions.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<section id="contact" class="sec">
+  <div class="sec-inner">
+    <div class="ct-grid">
+      <div class="rl">
+        <div class="eyebrow">Get In Touch</div>
+        <h2 class="sec-title">Let's Build Your<br><span>Next Website</span></h2>
+        <p style="color:var(--txt2);line-height:1.8;margin-bottom:2.25rem;font-size:.9rem">Have a project in mind? I'd love to hear about it. Fill out the form or reach out directly — I'll get back to you within 24 hours.</p>
+        <div class="ci-item"><div class="ci-ic">📱</div><div><div class="ci-lbl">Phone / WhatsApp</div><div class="ci-val"><a href="tel:+923046114226">0304-6114226</a></div></div></div>
+        <div class="ci-item"><div class="ci-ic">✉️</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:saadrajpoot6543@gmail.com">saadrajpoot6543@gmail.com</a></div></div></div>
+        <div class="ci-item"><div class="ci-ic">📍</div><div><div class="ci-lbl">Location</div><div class="ci-val">Satiana Road, Faisalabad, Pakistan</div></div></div>
+        <div class="soc">
+          <a href="https://www.facebook.com/saad.rajpoot.9484941" target="_blank" rel="noopener noreferrer" class="sb" title="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://wa.me/923046114226" target="_blank" rel="noopener noreferrer" class="sb" title="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div class="cf rr d2">
+        <h3>Send a Message</h3>
+        <div class="fr2">
+          <div><label class="fl">Full Name *</label><input type="text" class="fi2" placeholder="John Smith"></div>
+          <div><label class="fl">Email Address *</label><input type="email" class="fi2" placeholder="john@example.com"></div>
+        </div>
+        <div class="fg"><label class="fl">Phone Number</label><input type="tel" class="fi2" placeholder="+1 (555) 000-0000"></div>
+        <div class="fg"><label class="fl">Project Details *</label><textarea class="ft2" placeholder="Tell me about your project — what type of website do you need, what's the goal, any specific features..."></textarea></div>
+        <div class="fg"><label class="fl">Budget Range</label>
+          <select class="fs"><option value="">Select your budget</option><option>$200 – $500</option><option>$500 – $1,000</option><option>$1,000 – $2,500</option><option>$2,500 – $5,000</option><option>$5,000+</option></select></div>
+        <button class="bsub" onclick="hSub(event)">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="ft-inner">
+    <div>
+      <div class="ft-logo">Saad.</div>
+      <div class="ft-tag">WordPress Developer</div>
+      <p class="ft-bio">Building high-performance, SEO-friendly WordPress websites that help businesses grow online. Based in Faisalabad, Pakistan — working with clients worldwide.</p>
+    </div>
+    <div>
+      <div class="ft-ct">Quick Links</div>
+      <ul class="ftl">
+        <li><a href="#about" onclick="sTo(event,'about')">About</a></li>
+        <li><a href="#services" onclick="sTo(event,'services')">Services</a></li>
+        <li><a href="#projects" onclick="sTo(event,'projects')">Projects</a></li>
+        <li><a href="#testimonials" onclick="sTo(event,'testimonials')">Testimonials</a></li>
+        <li><a href="#contact" onclick="sTo(event,'contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-ct">Contact</div>
+      <ul class="ftl">
+        <li><a href="tel:+923046114226">0304-6114226</a></li>
+        <li><a href="mailto:saadrajpoot6543@gmail.com">saadrajpoot6543@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/saad.rajpoot.9484941" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://wa.me/923046114226" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-btm">
+    <span>© 2026 Saad. All Rights Reserved.</span>
+    <span>Crafted with ❤️ in Faisalabad, Pakistan</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
