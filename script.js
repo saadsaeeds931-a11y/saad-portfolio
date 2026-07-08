@@ -49,16 +49,37 @@ function slT(d){
   trk.style.transform=`translateX(-${tIdx*(trk.querySelector('.tc').offsetWidth+20)}px)`;
 }
 
-/* ── Filter ── */
-function fPr(cat,btn){
-  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
-  document.querySelectorAll('.pc').forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none'});
-}
-
 /* ── Mobile menu ── */
 function openMob(){document.getElementById('mob').classList.add('open')}
 function closeMob(){document.getElementById('mob').classList.remove('open')}
 document.getElementById('mbc').onclick=closeMob;
 
 /* ── Form submit ── */
-function hSub(e){e.preventDefault();const b=e.target;b.textContent='Sending...';setTimeout(()=>{b.textContent='Message Sent! ✓';b.style.background='linear-gradient(135deg,#10B981,#059669)'},1400)}
+function hSub(e){
+  e.preventDefault();
+  const form=document.getElementById('cf-form');
+  const btn=document.getElementById('bsub');
+  const origText=btn.textContent;
+  const origBg=btn.style.background;
+  btn.textContent='Sending...';
+  btn.disabled=true;
+
+  fetch('https://formsubmit.co/ajax/saadrajpoot6543@gmail.com',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(Object.fromEntries(new FormData(form)))
+  })
+  .then(res=>res.json())
+  .then(()=>{
+    btn.textContent='Message Sent! ✓';
+    btn.style.background='linear-gradient(135deg,#10B981,#059669)';
+    form.reset();
+    setTimeout(()=>{btn.textContent=origText;btn.style.background=origBg;btn.disabled=false;},4000);
+  })
+  .catch(()=>{
+    btn.textContent='Failed — Try Again';
+    btn.style.background='linear-gradient(135deg,#EF4444,#DC2626)';
+    setTimeout(()=>{btn.textContent=origText;btn.style.background=origBg;btn.disabled=false;},3500);
+  });
+}
+document.getElementById('cf-form')?.addEventListener('submit',hSub);
