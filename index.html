@@ -5,13 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saad — WordPress Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- global glow -->
 <div class="hero-blob1" aria-hidden="true"></div>
 <div class="hero-blob2" aria-hidden="true"></div>
+<div class="hero-blob3" aria-hidden="true"></div>
+<svg class="hero-streaks" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="streakGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC700" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#FFC700" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#FFE066" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="streakGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2A900" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFE066" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#F2A900" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M760,-40 C 900,140 980,260 1180,340 S 1480,420 1580,560" stroke="url(#streakGrad1)" stroke-width="2.5" fill="none"/>
+  <path d="M820,-60 C 950,110 1040,230 1230,310 S 1500,380 1620,500" stroke="url(#streakGrad2)" stroke-width="1.5" fill="none"/>
+  <path d="M700,-20 C 860,170 930,300 1120,370 S 1440,460 1520,610" stroke="url(#streakGrad1)" stroke-width="1" fill="none"/>
+  <circle cx="1120" cy="120" r="2.5" fill="#FFE066" opacity=".8"/>
+  <circle cx="1240" cy="260" r="1.8" fill="#FFC700" opacity=".6"/>
+  <circle cx="980" cy="90" r="1.6" fill="#FFE066" opacity=".55"/>
+  <circle cx="1340" cy="420" r="2.2" fill="#FFC700" opacity=".5"/>
+  <circle cx="880" cy="200" r="1.4" fill="#FFE066" opacity=".45"/>
+  <circle cx="1180" cy="560" r="2" fill="#F2A900" opacity=".55"/>
+  <circle cx="200" cy="700" r="1.6" fill="#FFC700" opacity=".3"/>
+  <circle cx="120" cy="150" r="1.4" fill="#FFE066" opacity=".3"/>
+</svg>
 
 <!-- ══ MOBILE MENU ══ -->
 <div class="mob" id="mob">
@@ -53,7 +79,7 @@
   <div class="h-left">
     <!-- available badge -->
     <div class="rv" style="margin-bottom:1.2rem">
-      <span style="display:inline-flex;align-items:center;gap:.5rem;padding:.38rem 1rem;border-radius:100px;border:1px solid rgba(124,58,237,.4);background:rgba(124,58,237,.1);font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--ac2);text-transform:uppercase">
+      <span style="display:inline-flex;align-items:center;gap:.5rem;padding:.38rem 1rem;border-radius:100px;border:1px solid rgba(242,169,0,.4);background:rgba(242,169,0,.1);font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--ac2);text-transform:uppercase">
         <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;display:inline-block;animation:pulse 2s infinite"></span>
         Available for New Projects
       </span>
@@ -82,21 +108,37 @@
       <!-- orbit rings -->
       <div class="orb" aria-hidden="true">
         <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="300" cy="300" r="240" stroke="rgba(124,58,237,0.12)" stroke-width="1" stroke-dasharray="6 14"/>
-          <circle cx="300" cy="300" r="285" stroke="rgba(124,58,237,0.07)" stroke-width="1" stroke-dasharray="4 18"/>
-          <circle cx="300" cy="300" r="185" stroke="rgba(124,58,237,0.09)" stroke-width="1"/>
-          <circle cx="300" cy="60"  r="5" fill="rgba(124,58,237,0.8)"/>
-          <circle cx="525" cy="240" r="4" fill="rgba(159,103,255,0.6)"/>
-          <circle cx="450" cy="520" r="3.5" fill="rgba(124,58,237,0.5)"/>
-          <circle cx="120" cy="410" r="3" fill="rgba(159,103,255,0.4)"/>
+          <defs>
+            <linearGradient id="ribbonGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F2A900" stop-opacity="0"/>
+              <stop offset="45%" stop-color="#FFC700" stop-opacity=".85"/>
+              <stop offset="100%" stop-color="#FFE066" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="ribbonGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FFE066" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#F2A900" stop-opacity=".6"/>
+              <stop offset="100%" stop-color="#FFC700" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M-30,180 C 140,120 220,260 340,220 S 560,120 660,180" stroke="url(#ribbonGrad1)" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M-20,420 C 160,470 260,360 380,400 S 580,480 650,430" stroke="url(#ribbonGrad2)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <circle cx="300" cy="300" r="240" stroke="rgba(242,169,0,0.14)" stroke-width="1" stroke-dasharray="6 14"/>
+          <circle cx="300" cy="300" r="285" stroke="rgba(242,169,0,0.09)" stroke-width="1" stroke-dasharray="4 18"/>
+          <circle cx="300" cy="300" r="185" stroke="rgba(242,169,0,0.11)" stroke-width="1"/>
+          <circle cx="300" cy="60"  r="5.5" fill="rgba(255,199,0,0.9)"/>
+          <circle cx="525" cy="240" r="4.5" fill="rgba(255,224,102,0.75)"/>
+          <circle cx="450" cy="520" r="4" fill="rgba(255,199,0,0.65)"/>
+          <circle cx="120" cy="410" r="3.5" fill="rgba(255,224,102,0.55)"/>
         </svg>
       </div>
+      <div class="h-photo-halo"></div>
+      <div class="h-photo-ring"></div>
       <div class="h-photo-glow"></div>
       <div class="h-photo-glow2"></div>
       <div class="h-photo-box">
         <div class="side-fade-l"></div>
         <div class="side-fade-r"></div>
-        <img id="heroImg" src="saad-profile.jpg" alt="Saad — WordPress Developer" style="display:block" onerror="this.style.display='none';document.getElementById('hFb').style.display='flex'">
+        <img id="heroImg" src="images/saad-profile.jpg" alt="Saad — WordPress Developer" style="display:block" onerror="this.style.display='none';document.getElementById('hFb').style.display='flex'">
         <div id="hFb" class="photo-fb">
           <div class="av">S</div>
           <div class="av-name">Saad</div>
@@ -415,6 +457,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
